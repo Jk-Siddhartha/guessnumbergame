@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-div{
+    background: #5f27cd;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-div{
+    width: 25%;
+    background: #fff;
+    padding: 4% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.inner-div p{
+    text-align: center;
+    font-weight: 900;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 4% 12%;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.easy{
+    background: linear-gradient(to left,#54a0ff,#5f27cd);
+    transition: all 0.3s ease-in-out;
+}
+
+.easy:hover{
+    background: linear-gradient(to right,#54a0ff,#5f27cd);
+}
+
+.hard{
+    background: #341f97;
+}
+
+.hard:hover{
+    background: #5f27cd;
+}
+
+.start-again{
+    background: linear-gradient(to left,#54a0ff,#5f27cd);
+}
+
+.start-again:hover{
+    background: linear-gradient(to right,#54a0ff,#5f27cd);
+}
+
+.inner-div input{
+    text-align: center;
+    font-weight: 700;
+    padding: 2.5% 0;
+}
+
+.inner-div:nth-child(2){
+    width: auto;
+    padding: 4% 2%;
+}
+
+.game-area{
+    display: none;
+}
+
+.game-again-container{
+    width: 100%;
+    text-align: center;
+}
+
+.no-of-previous-attempts,.no-of-previous-guesses{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.no-of-previous-attempts > p:nth-child(2),.no-of-previous-guesses > p:nth-child(2){
+    color: red;
+}
+
+
+@media screen and (max-width:375px) {
+    .inner-div{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:480px) {
+    .inner-div{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .inner-div{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .inner-div{
+        width: 45%;
+    }
+}

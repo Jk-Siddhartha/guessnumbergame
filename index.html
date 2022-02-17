@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="inner-div msg-area">
+        <p>Guess the random number between 1-100</p>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3612/3612569.png"
+          alt=""
+        />
+        <p>Select The Difficulty</p>
+        <button class="btn easy">Easy: 10 Attempts</button>
+        <button class="btn hard">Hard: 5 Attempts</button>
+      </div>
+      <div class="inner-div game-area">
+        <div class="game-again-container"></div>
+        <h2 class="output">Your Guess</h2>
+        <input
+          type="number"
+          name="guess"
+          id="guess"
+          onchange="playGame()"
+          placeholder="Enter Your Guess"
+        />
+        <div class="no-of-previous-attempts">
+          <p>Number of previous attempts</p>
+          <p class="previous-attempts-count">0</p>
+        </div>
+        <div class="no-of-previous-guesses">
+          <p>Number of previous guesses</p>
+          <p class="previous-guesses-history">-</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
